@@ -109,6 +109,8 @@ function App() {
     if (indexToRemove === null) return;
     if (itemId === null) return;
 
+    console.log("thought")
+
     const result = await axios({
       method: 'DELETE',
       url: `${config.api_base_url}/item/${itemId}`,
