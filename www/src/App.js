@@ -108,12 +108,12 @@ function App() {
     }
   };
 
-  const deleteToDo = async (indexToRemove, itemId) => {
+  const deleteToDo = async (indexToRemove, item) => {
     if (indexToRemove === null) return;
-    if (itemId === null) return;
+    if (item === null) return;
 
     console.log('thought');
-    console.log(itemId);
+    console.log(item);
 
     const result = await axios({
       method: 'DELETE',
