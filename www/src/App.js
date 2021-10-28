@@ -114,6 +114,7 @@ function App() {
 
     console.log('thought');
     console.log(itemId);
+    console.log(idToken)
 
     const result = await axios({
       method: 'DELETE',
