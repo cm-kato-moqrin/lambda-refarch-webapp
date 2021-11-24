@@ -86,10 +86,10 @@ function App() {
     console.log(item);
     if (!item || item === '') return;
 
-    const newToDo = {
-      item: item,
-      completed: false,
-    };
+      const newToDo = {
+        item: item,
+        completed: false,
+      };
 
     const result = await axios({
       method: 'POST',
@@ -173,7 +173,7 @@ function App() {
             <Col md='6'>
               {idToken.length > 0 ? (
                 <ToDo
-                  updateAlert={updateAlert}
+                  // updateAlert={updateAlert}
                   toDos={toDos}
                   addToDo={addToDo}
                   deleteToDo={deleteToDo}
